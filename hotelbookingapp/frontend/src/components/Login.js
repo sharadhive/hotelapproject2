@@ -18,7 +18,7 @@ const Login = () => {
       });
 
       const res = await axiosInstance.post(
-        "https://hotelbookingbackend-4asp.onrender.com/api/user/login",
+        "http://localhost:5000/api/user/login",
         { email: email, password: password }
       );
 
