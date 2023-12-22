@@ -16,7 +16,7 @@ const Reservation = () => {
           withCredentials: true,
         });
 
-        const response = await axiosInstance.post("https://hotelbookingbackend-4asp.onrender.com/api/booking/reserve" , { user: userDetails.toString() });
+        const response = await axiosInstance.post("http://localhost:5000/api/booking/reserve" , { user: userDetails.toString() });
         setReservationData([...reservationData , response.data]);
         if (reservationData.length === 0) {
           setHasBooking(false); 
