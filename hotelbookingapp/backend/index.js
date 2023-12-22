@@ -8,7 +8,7 @@ const mongoose = require('mongoose')
 
 
 app.use(cors({
-    origin: 'http://localhost:6110',
+    origin: 'http://localhost:3000',
     credentials: true, 
   }));
 app.use(express.json())
@@ -32,6 +32,6 @@ app.get('/' , (req,res)=> {
 
 app.use('/api' , router)
 
-app.listen(  6000, ()=>{
+app.listen(  5000, ()=>{
     console.log('Server Started');
 })
