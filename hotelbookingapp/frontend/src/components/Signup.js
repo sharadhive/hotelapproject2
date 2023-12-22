@@ -23,7 +23,7 @@ const Signup = () => {
       };
 
       const res = await axiosInstance.post(
-        "https://hotelbookingbackend-4asp.onrender.com/api/user/sign",
+        "http://localhost:5000/api/user/sign",
         data
       );
 
