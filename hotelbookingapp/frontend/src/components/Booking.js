@@ -38,7 +38,7 @@ const Booking = () => {
         withCredentials: true,
       });
       axiosInstance
-        .post("https://hotelbookingbackend-4asp.onrender.com/api/room/get-rooms", {
+        .post("http://localhost:5000/api/room/get-rooms", {
           _id: `${bookingid}`,
         })
         .then((res) => {
