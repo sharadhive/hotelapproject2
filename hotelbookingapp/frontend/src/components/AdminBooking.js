@@ -11,7 +11,7 @@ const AdminBooking = () => {
         withCredentials: true,
       });
       axiosInstance
-        .get("https://hotelbookingbackend-4asp.onrender.com/api/booking/admin-Bookings")
+        .get("http://localhost:5000/api/booking/admin-Bookings")
         .then((res) => {
           setData(res.data);
         });
