@@ -31,7 +31,7 @@ const {setFromDate , fromDate , toDate , setToDate} = useContext(DataContext)
           withCredentials: true,
         });
         axiosInstance
-          .get("https://hotelbookingbackend-4asp.onrender.com/api/room/get-rooms")
+          .get("http://localhost:5000/api/room/get-rooms")
           .then((res) => {
             setData(res.data);
           });
